@@ -1,20 +1,18 @@
+@import "assets/scss/main";
+@import "components/components";
+
 .root {
-  //background: linear-gradient(45deg, #59C173, #a17fe0, #f64f59);
-  background: linear-gradient(45deg, red, blue);
-  background-size: 400% 400%;
-  animation: gradient 25s ease infinite;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #59C173, #a17fe0, #f64f59);
+  background-size: 750% 7500%;
+  animation: gradient 10s ease-in-out infinite
 }
 
 @keyframes gradient {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 0;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0 50% }
+  25% { background-position: 25% 75% }
+  50% { background-position: 50% 100% }
+  75% { background-position: 75% 75% }
+  100% { background-position: 0 50% }
 }

@@ -1,4 +1,8 @@
+@import "utils/reset";
 @import "utils/normalize";
 @import "utils/vars";
 @import "utils/fonts";
 @import "utils/common";
+
+//components
+@import "../../components/components";

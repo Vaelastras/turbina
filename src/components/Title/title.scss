@@ -1,0 +1,13 @@
+.content__title {
+  margin: 60px 0 44px 60px;
+
+  &:first-of-type {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content__title {
+    margin: 36px 0 25px 16px;
+  }
+}

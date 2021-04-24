@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.footer__copyright {
+  margin: 35px 35px
+}
+
+.footer__link {
+  color: $c-10;
+  text-decoration: none;
+  &:hover {
+    font-style: italic;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  .footer__copyright {
+    margin: 24px 24px;
+  }
+
+}

@@ -1,0 +1,16 @@
+.content {
+  min-width: 1260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: $c-0;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px){
+  .content {
+    //max-width: 95%;
+  }
+
+}
