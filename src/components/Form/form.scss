@@ -1,0 +1,97 @@
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 593px;
+  margin-left: 58px;
+
+  &__input {
+    width: 569px;
+    height: 60px;
+    padding-left: 24px;
+    border-radius: 30px;
+    margin-bottom: 16px;
+    border: 2px solid $c-10;
+
+      &[name='text'] {
+        height: 346px;
+        margin-bottom: 34px;
+        padding-top: 19px;
+      }
+
+      &::placeholder{
+        color: grey;
+      }
+
+    &:focus{
+      top: 20px;
+
+    }
+
+    &_type_checkbox {
+      width: 27px;
+      height: 27px;
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+  }
+
+  &__oferta {
+    display: flex;
+    align-items: center;
+    margin: 0 0 88px;
+  }
+
+  &__confirm-text {
+    margin-left: 14px ;
+  }
+
+  &__link{
+    color:$c-10;
+    &:visited {
+      color: black;
+    }
+  }
+
+  &__submit {
+    width: 593px;
+    height: 60px;
+    border-radius: 30px;
+    margin-bottom: 86px;
+    outline: none;
+    background-color: transparent;
+    &:hover {
+      transition: all $t-eio;
+      font-weight: $fw-5;
+      background-color: rgba(239, 239, 239, 0.8);
+    }
+  }
+
+}
+
+.form__input-placeholder {
+  position: absolute;
+  background-color: #fff;
+  top: 21px;
+  left: 24px;
+  padding: 0 10px;
+  transition: top $t-eio;
+}
+
+.form__input:not(:placeholder-shown) + .form__input-placeholder,
+.form__input:focus + .form__input-placeholder {
+  top: -10px;
+  left: 18px;
+  font-size: 12px;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0;
+  color: grey;
+}
+
+.form__input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}

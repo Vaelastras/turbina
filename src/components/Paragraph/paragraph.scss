@@ -1,7 +1,20 @@
 .content__paragraph {
   margin-left: 58px;
   max-width: 716px;
+  margin-bottom: 24px;
   &_formatted {
     margin-bottom: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .content__paragraph {
+    margin-left: 16px;
+    max-width: 278px;
+    margin-bottom: 12px;
+    &_formatted {
+      margin-bottom: 0;
+    }
   }
 }
