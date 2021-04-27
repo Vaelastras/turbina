@@ -30,7 +30,7 @@ function Form () {
 				</div>
 				<div className="form__oferta">
 					<input className='form__input_type_checkbox' type='radio' name='checkbox' id='input-checkbox'/>
-					<p className='form__confirm-text txt-3'> Согласен с <a className="form__link" href='#' target='_blank' rel='noreferrer'>офертой</a></p>
+					<p className='form__confirm-text txt-3'> Согласен с <a className="form__link" href='./' target='_blank' rel='noreferrer'>офертой</a></p>
 				</div>
 				<button className="form__submit txt-3" type='submit'>Отправить</button>
 			</form>
